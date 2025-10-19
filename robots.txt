@@ -1,0 +1,11 @@
+# BFourU Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin or config paths (if added in future)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /config/
+
+# Sitemap reference
+Sitemap: https://www.bfouru.com/sitemap.xml
