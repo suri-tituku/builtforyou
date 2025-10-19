@@ -3,146 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BFourU — Design, Branding, Development & Marketing | India & Dubai</title>
-  <meta name="description" content="BFourU unites Design & Branding, Software Development, Marketing & Growth, and Gifting & Craft. Four Dimensions of Creation. Built ForU. Serving India & Dubai." />
-  <meta name="keywords" content="BFourU, design agency, branding agency, software development, web development, marketing agency, growth marketing, creative tech company, corporate gifting, Hyderabad, Dubai, India, UAE" />
-  <meta name="author" content="BFourU" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <title>BFourU — Four Dimensions of Creation. Built for You</title>
+  <meta name="description" content="BFourU unites Design & Branding, Software Development, Marketing & Growth, and Gifting & Craft. Serving clients across India & Dubai." />
+  <meta name="keywords" content="BFourU, design agency, branding, software development, marketing, gifting, creative studio, India, Dubai" />
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.bfouru.com/" />
-
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="BFourU" />
-  <meta property="og:title" content="BFourU — Four Dimensions of Creation" />
-  <meta property="og:description" content="Design & Branding, Development, Marketing & Craft — built for you. Serving India & Dubai." />
+  <meta property="og:title" content="BFourU — Four Dimensions of Creation. Built for You" />
+  <meta property="og:description" content="Design, Branding, Development & Marketing — built for you. India & Dubai." />
   <meta property="og:url" content="https://www.bfouru.com/" />
   <meta property="og:image" content="https://www.bfouru.com/logo.jpg" />
-
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="BFourU — Four Dimensions of Creation" />
-  <meta name="twitter:description" content="Design & Branding, Development, Marketing & Craft — built for you. Serving India & Dubai." />
+  <meta name="twitter:title" content="BFourU — Four Dimensions of Creation. Built for You" />
+  <meta name="twitter:description" content="Design, Branding, Development & Marketing — built for you. India & Dubai." />
   <meta name="twitter:image" content="https://www.bfouru.com/logo.jpg" />
-
-  <!-- Regional signals -->
-  <meta name="geo.region" content="IN-TG" />
-  <meta name="geo.placename" content="Hyderabad" />
-  <meta name="country" content="IN, AE" />
-
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N3NW8M2T');</script>
-<!-- End Google Tag Manager -->
-
   <link rel="icon" href="logo.jpg" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id=GTM-N3NW8M2T'+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N3NW8M2T');</script>
+  <!-- End Google Tag Manager -->
   <style>
     :root{
-      --bg:#000000; /* near black */
-      --text:#f5f6f7; /* off white */
-      --muted:#bfc3c9; /* soft gray */
-      --accent:#e53935; /* BFourU red */
-      --card:#111216; /* dark card */
-      --border:#20222a;
+      --bg:#000000;
+      --text:#f5f5f5;
+      --muted:#bfbfbf;
+      --accent:#e53935;
+      --card:#0f0f10;
+      --border:#1e1e1e;
       --shadow:0 10px 30px rgba(0,0,0,.35);
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;background:var(--bg);color:var(--text);
-      font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
-      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-    }
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1100px;margin-inline:auto;padding:24px}
-
-    /* Header */
-    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(0, 0, 0, 0.92),rgba(0, 0, 0, 0.85) 60%,rgba(0, 0, 0, 0));backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:16px;}
-    .brand img{height:70px;max-width:100%}
-    .cta{display:inline-flex;gap:.6rem;align-items:center;padding:.7rem 1rem;border:1px solid var(--border);border-radius:12px;background:#0f1116;color:var(--text)}
-    .cta:hover{border-color:#2a2e39}
-
-    /* Hero */
-    .hero{padding:72px 0 40px;text-align:center}
-    .kicker{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:1.78rem}
-    .title{font-size:clamp(28px,3.2vw,46px);line-height:1.15;margin:.25rem 0 .5rem;font-weight:800}
-    .subtitle{font-size:clamp(18px,2.2vw,22px);color:var(--muted);max-width:70ch;margin:auto}
-
-    /* Countdown */
-    .countdown{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;justify-content:center}
-    .tile{background:var(--card);border:1px solid var(--border);padding:14px 16px;border-radius:14px;min-width:92px;text-align:center;box-shadow:var(--shadow)}
-    .num{font-size:28px;font-weight:800}
-    .lbl{font-size:.78rem;color:var(--muted)}
-
-    /* Sections */
-    section{padding:56px 0;border-top:1px solid var(--border)}
-    .section-title{font-size:clamp(22px,2.6vw,30px);margin:0 0 18px;text-align:center}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
-    .card h3{margin:0 0 8px}
-    .pill{display:inline-block;background:rgba(229,57,53,.12);color:#ffd9d7;border:1px solid rgba(229,57,53,.35);padding:.25rem .6rem;border-radius:999px;font-size:.72rem;letter-spacing:.02em;margin-bottom:8px}
-    .card p{color:var(--muted)}
-
-    .two{display:grid;gap:20px;grid-template-columns:1.2fr .8fr}
-    @media (max-width:860px){.two{grid-template-columns:1fr}}
-    .about p{color:var(--muted)}
-    .list{margin:0;padding-left:18px;color:var(--muted)}
-
-    footer{padding:36px 0;border-top:1px solid var(--border);color:#9aa0a6;font-size:.9rem;text-align:center}
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--text);
+      font:16px/1.55 system-ui,-apple-system,Segoe UI,Inter,Roboto,Helvetica,Arial;}
+    a{color:inherit;text-decoration:none;}
+    .wrap{max-width:1120px;margin:auto;padding:22px;}
+    header{position:sticky;top:0;z-index:40;background:#000000cc;
+      backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+    .brand{display:flex;align-items:center;gap:12px;}
+    .brand img{height:56px;}
+    .menu{display:flex;gap:16px;flex-wrap:wrap;}
+    .menu a{padding:8px 12px;border-radius:10px;border:1px solid transparent;}
+    .menu a:hover{border-color:var(--border);background:#0a0a0a;}
+    .hero{padding:72px 0 40px;text-align:center;}
+    .kicker{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;}
+    h1{font-size:clamp(28px,3vw,44px);margin:.4rem 0 .6rem;}
+    p.lead{color:var(--muted);max-width:70ch;margin:.25rem auto 0;}
+    .countdown{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;justify-content:center;}
+    .tile{background:var(--card);border:1px solid var(--border);padding:14px 16px;
+      border-radius:14px;min-width:92px;text-align:center;box-shadow:var(--shadow);}
+    .num{font-size:28px;font-weight:800;}
+    .lbl{font-size:.78rem;color:var(--muted);}
+    section{padding:56px 0;border-top:1px solid var(--border);}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow);}
+    .card h3{margin:6px 0 8px;}
+    .card p{color:var(--muted);}
+    footer{padding:28px 0;border-top:1px solid var(--border);color:#c8c8c8;font-size:.95rem;text-align:center;}
+    .footer-links a{margin:0 8px;color:#bfbfbf;}
   </style>
-
-  <!-- Structured Data: Organization with service areas (IN & Dubai) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "BFourU",
-    "url": "https://www.bfouru.com/",
-    "logo": "https://www.bfouru.com/logo.jpg",
-    "email": "info@bfouru.com",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "info@bfouru.com",
-      "areaServed": ["IN","AE"],
-      "availableLanguage": ["en","hi","te","ar"]
-    }],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "addressCountry": "IN"
-    },
-    "areaServed": [
-      {"@type":"Country","name":"India","sameAs":"https://en.wikipedia.org/wiki/India"},
-      {"@type":"Place","name":"Dubai, UAE","sameAs":"https://en.wikipedia.org/wiki/Dubai"}
-    ],
-    "sameAs": []
-  }
-  </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- Header -->
-  <header class="wrap">
-    <div class="brand">
-      <img src="logo.jpg" alt="BFourU Logo" />
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="./"><img src="logo.jpg" alt="BFourU logo"></a>
+      <nav class="menu">
+        <a href="./">Home</a>
+        <a href="./services/">Services</a>
+        <a href="./about/">About</a>
+        <a href="./contact/">Contact</a>
+      </nav>
     </div>
-    <a class="cta" href="#contact">Contact</a>
   </header>
 
   <!-- Hero -->
   <main class="wrap hero">
-    <span class="kicker">Four Dimensions of Creation</span>
-    <h2 class="title">Design, Branding, Development & Marketing — built for you.</h2>
-    <p class="subtitle">We’re a unified creative-technology company helping brands launch, scale and shine across India & Dubai. From visual identity and product engineering to growth strategy and campaigns — we build what’s next.</p>
+    <div class="kicker">Four Dimensions of Creation</div>
+    <h1>Design, Branding, Development & Marketing — built for you.</h1>
+    <p class="lead">We’re a unified creative-technology company helping brands launch, scale, and shine across India & Dubai. From visual identity and product engineering to growth strategy and campaigns — we build what’s next.</p>
 
-    <!-- Countdown to Dec 1, 2025 -->
+    <!-- Countdown -->
     <div class="countdown" role="timer" aria-live="polite" aria-label="Countdown to December 1, 2025">
       <div class="tile"><div class="num" id="dd">–</div><div class="lbl">Days</div></div>
       <div class="tile"><div class="num" id="hh">–</div><div class="lbl">Hours</div></div>
@@ -151,86 +103,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </main>
 
-  <!-- Services -->
-  <section id="services">
-    <div class="wrap">
-      <h2 class="section-title">What we do</h2>
-      <div class="cards">
-        <article class="card">
-          <span class="pill">Design & Branding</span>
-          <h3>Identity systems, UI/UX & packaging</h3>
-          <p class="muted">Logos, design systems, brand guidelines, websites and product UI that feel premium and perform beautifully.</p>
-        </article>
-        <article class="card">
-          <span class="pill">Software Development</span>
-          <h3>Web, mobile & platforms</h3>
-          <p class="muted">Full‑stack development with modern stacks (React/Next, Node/Django), APIs, cloud and automation.</p>
-        </article>
-        <article class="card">
-          <span class="pill">Marketing & Growth</span>
-          <h3>Performance & content</h3>
-          <p class="muted">SEO, ads, analytics, content and campaign ops — data‑driven growth that compounds.</p>
-        </article>
-        <article class="card">
-          <span class="pill">Gifting & Craft</span>
-          <h3>Branded kits & experiences</h3>
-          <p class="muted">Curated corporate gifts, welcome kits and crafted artifacts that turn customers into fans.</p>
-        </article>
-      </div>
+  <!-- Services Summary Section -->
+  <section>
+    <div class="wrap cards">
+      <article class="card">
+        <h3>Design & Branding</h3>
+        <p>Logos, brand identity, packaging, and UI/UX — everything that shapes your visual presence.</p>
+      </article>
+      <article class="card">
+        <h3>Software Development</h3>
+        <p>Full-stack web and mobile applications built with modern frameworks like React, Next.js, and Node.</p>
+      </article>
+      <article class="card">
+        <h3>Marketing & Growth</h3>
+        <p>From SEO and paid ads to analytics and content — we drive measurable, scalable growth.</p>
+      </article>
+      <article class="card">
+        <h3>Gifting & Craft</h3>
+        <p>Creative branded kits and gifts that make every interaction memorable and meaningful.</p>
+      </article>
     </div>
   </section>
 
-  <!-- About + Contact -->
-  <section id="about">
-    <div class="wrap two">
-      <div class="about">
-        <h2 class="section-title">About BFourU</h2>
-        <p>BFourU brings four disciplines under one roof so your brand feels consistent across every touchpoint. We combine award‑level design with robust engineering and measurable growth — and we add human warmth with crafted experiences. Based in Hyderabad, serving clients across India and Dubai.</p>
-        <ul class="list">
-          <li>Single partner across design, build, launch and scale</li>
-          <li>Transparent roadmaps, sprints and reporting</li>
-          <li>India‑first with global delivery and quality</li>
-        </ul>
-      </div>
-      <aside id="contact">
-        <h2 class="section-title">Let’s build</h2>
-        <p class="subtitle" style="margin:0 0 10px">Tell us about your idea and timeline. We’ll reply within 24 hours.</p>
-        <div class="card">
-          <p style="margin:.2rem 0">📧 <a href="mailto:info@bfouru.com">info@bfouru.com</a></p>
-          <p style="margin:.2rem 0">📞 <a href="tel:+919182970829">+91 91829 70829</a></p>
-          <!-- <p style="margin:.2rem 0">↗︎ <a href="#">LinkedIn</a> · <a href="#">Instagram</a> · <a href="#">X</a></p> -->
-        </div>
-      </aside>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <div class="wrap">© <span id="yr"></span> BFourU. All rights reserved.</div>
+    <div class="wrap">
+      © <span id="yr"></span> BFourU. All Rights Reserved. · 📞 +91 91829 70829 · ✉️ 
+      <a href="mailto:info@bfouru.com">info@bfouru.com</a>
+      <div class="footer-links" style="margin-top:6px">
+        <a href="./">Home</a> · 
+        <a href="./services/">Services</a> · 
+        <a href="./about/">About</a> · 
+        <a href="./contact/">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <script>
-    // Countdown to Dec 1, 2025 00:00:00 local time
-    (function(){
-      const target = new Date('2025-12-01T00:00:00');
-      const $ = id => document.getElementById(id);
-      const tick = () => {
-        const now = new Date();
-        let diff = target - now;
-        if (diff < 0) diff = 0; // clamp at zero once we reach the date
-        const s = Math.floor(diff/1000);
-        const days = Math.floor(s/86400);
-        const hours = Math.floor((s%86400)/3600);
-        const mins = Math.floor((s%3600)/60);
-        const secs = s%60;
-        $('dd').textContent = days;
-        $('hh').textContent = String(hours).padStart(2,'0');
-        $('mm').textContent = String(mins).padStart(2,'0');
-        $('ss').textContent = String(secs).padStart(2,'0');
-      };
-      tick();
-      setInterval(tick, 1000);
-      document.getElementById('yr').textContent = new Date().getFullYear();
-    })();
+    // Countdown Timer
+    const target = new Date('2025-12-01T00:00:00');
+    const el = id => document.getElementById(id);
+    const tick = () => {
+      const now = new Date();
+      let diff = target - now;
+      if(diff<0) diff=0;
+      const s = Math.floor(diff/1000);
+      const d = Math.floor(s/86400);
+      const h = Math.floor((s%86400)/3600);
+      const m = Math.floor((s%3600)/60);
+      const sec = s%60;
+      el('dd').textContent = d;
+      el('hh').textContent = String(h).padStart(2,'0');
+      el('mm').textContent = String(m).padStart(2,'0');
+      el('ss').textContent = String(sec).padStart(2,'0');
+    };
+    tick(); setInterval(tick,1000);
+    document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

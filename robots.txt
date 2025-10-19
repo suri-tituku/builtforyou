@@ -1,11 +1,23 @@
-# BFourU Robots.txt
+# BFourU Robots.txt — SEO Optimized (India & Dubai Target)
+# Allow all major search engines to index public pages
+
 User-agent: *
 Allow: /
 
-# Disallow admin or config paths (if added in future)
+# Disallow private or non-production paths (in case added later)
 Disallow: /admin/
 Disallow: /login/
 Disallow: /config/
+Disallow: /drafts/
+Disallow: /test/
 
-# Sitemap reference
+# Crawl-delay (optional for some bots to prevent overloading)
+Crawl-delay: 5
+
+# Sitemap location
 Sitemap: https://www.bfouru.com/sitemap.xml
+
+# Additional info
+# Created: 2025-10-20
+# Website: https://www.bfouru.com/
+# Owner: BFourU (info@bfouru.com | +91 91829 70829)
