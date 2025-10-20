@@ -22,26 +22,44 @@
   <meta name="twitter:image" content="https://www.bfouru.com/logo.jpg" />
   <link rel="icon" href="logo.jpg" />
 
-  <!-- ✅ JSON-LD Structured Data for BFourU -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "BFourU",
-    "url": "https://www.bfouru.com",
-    "logo": "https://www.bfouru.com/logo.jpg",
-    "email": "info@bfouru.com",
-    "telephone": "+91 91829 70829",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "addressCountry": "India"
-    },
-    "areaServed": ["India", "Dubai"]
-  }
-  </script>
-
+<!-- ✅ JSON-LD LocalBusiness Schema for BFourU (no geo coordinates) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "BFourU",
+  "image": "https://www.bfouru.com/logo.jpg",
+  "url": "https://www.bfouru.com",
+  "logo": "https://www.bfouru.com/logo.jpg",
+  "description": "BFourU is a creative and technology company providing Design & Branding, Software Development, Marketing, and Gifting solutions across India and Dubai.",
+  "email": "info@bfouru.com",
+  "telephone": "+91 91829 70829",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad, Telangana",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500001",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "India" },
+    { "@type": "Place", "name": "Dubai, UAE" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "sameAs": [
+    "https://www.linkedin.com/company/bfouru",
+    "https://www.instagram.com/bfouru",
+    "https://x.com/bfouru"
+  ]
+}
+</script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
