@@ -7,6 +7,7 @@
   <meta name="description" content="Contact BFourU for branding, development, and marketing projects. Email info@bfouru.com or call +91 91829 70829. Hyderabad-based, serving India & Dubai." />
   <link rel="canonical" href="https://www.bfouru.com/contact/" />
   <meta name="robots" content="index, follow" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="BFourU" />
@@ -14,6 +15,7 @@
   <meta property="og:description" content="Email info@bfouru.com or call +91 91829 70829. India & Dubai." />
   <meta property="og:url" content="https://www.bfouru.com/contact/" />
   <meta property="og:image" content="https://www.bfouru.com/logo.jpg" />
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact BFourU — Let’s Build Together" />
@@ -21,16 +23,41 @@
   <meta name="twitter:image" content="https://www.bfouru.com/logo.jpg" />
   <link rel="icon" href="../logo.jpg" />
 
-  <!-- ✅ JSON-LD ContactPage Schema for BFourU -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "url": "https://www.bfouru.com/contact/",
-  "name": "Contact BFourU",
-  "description": "Reach out to BFourU for design, development, marketing, and creative partnership inquiries. Serving clients across India and Dubai.",
-  "mainEntity": {
+  <!-- ✅ 1. ContactPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://www.bfouru.com/contact/#contactpage",
+    "url": "https://www.bfouru.com/contact/",
+    "name": "Contact BFourU",
+    "mainEntityOfPage": "https://www.bfouru.com/contact/",
+    "description": "Reach out to BFourU for design, development, marketing, and creative partnership inquiries. Serving clients across India and Dubai.",
+    "publisher": { "@id": "https://www.bfouru.com/#organization" },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://www.bfouru.com/logo.jpg"
+    },
+    "potentialAction": {
+      "@type": "ContactAction",
+      "target": "mailto:info@bfouru.com",
+      "result": {
+        "@type": "ContactPoint",
+        "telephone": "+91 91829 70829",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi"],
+        "email": "info@bfouru.com"
+      }
+    }
+  }
+  </script>
+
+  <!-- ✅ 2. Organization Reference -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.bfouru.com/#organization",
     "name": "BFourU",
     "url": "https://www.bfouru.com",
     "logo": "https://www.bfouru.com/logo.jpg",
@@ -42,43 +69,43 @@
       "addressLocality": "Hyderabad",
       "addressRegion": "Telangana",
       "postalCode": "500001",
-      "addressCountry": "India"
+      "addressCountry": "IN"
     },
-    "areaServed": ["India", "Dubai"],
-    "contactPoint": {
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai, UAE" }
+    ],
+    "contactPoint": [{
       "@type": "ContactPoint",
       "telephone": "+91 91829 70829",
       "contactType": "customer service",
       "availableLanguage": ["English", "Hindi"],
       "email": "info@bfouru.com"
-    }
+    }]
   }
-}
-</script>
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.bfouru.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Contact",
-      "item": "https://www.bfouru.com/contact/"
-    }
-  ]
-}
-</script>
-
-
-
+  <!-- ✅ 3. BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.bfouru.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://www.bfouru.com/contact/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -87,6 +114,7 @@
   'https://www.googletagmanager.com/gtm.js?id=GTM-N3NW8M2T'+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-N3NW8M2T');</script>
   <!-- End GTM -->
+
   <style>
     :root{--bg:#000;--text:#f5f5f5;--muted:#bfbfbf;--accent:#e53935;--card:#0f0f10;--border:#1e1e1e;--shadow:0 10px 30px rgba(0,0,0,.35)}
     *{box-sizing:border-box}
@@ -116,6 +144,7 @@
     .footer-links a{margin:0 8px;color:#bfbfbf}
   </style>
 </head>
+
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -168,22 +197,15 @@
     </div>
   </footer>
 
-  <!-- EmailJS placeholders (fill these when you create your EmailJS account):
-       const SERVICE_ID = 'service_bfouru';
-       const TEMPLATE_ID = 'template_contact';
-       const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
-  -->
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // Minimal form handler; replace with EmailJS later
     document.getElementById('contact-form').addEventListener('submit', function(e){
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const message = document.getElementById('message').value.trim();
       if(!name || !email || !message){ alert('Please fill all fields.'); return; }
-      alert('Thanks! This demo form is ready for EmailJS. We will integrate it when your keys are ready.');
+      alert('Thanks! This demo form is ready for EmailJS integration.');
       this.reset();
     });
   </script>
