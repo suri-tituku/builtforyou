@@ -29,25 +29,43 @@
   <link rel="icon" href="logo.jpg" />
 
   <!-- ✅ 1. Organization Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.bfouru.com/#organization",
-    "name": "BFourU",
-    "url": "https://www.bfouru.com",
-    "logo": "https://www.bfouru.com/logo.jpg",
-    "image": "https://www.bfouru.com/logo.jpg",
-    "description": "BFourU is a creative and technology company providing Design & Branding, Software Development, Marketing, and Gifting solutions across India and Dubai.",
-    "email": "info@bfouru.com",
-    "telephone": "+91 91829 70829",
-    "sameAs": [
-      "https://www.linkedin.com/company/bfouru",
-      "https://www.instagram.com/bfouru",
-      "https://x.com/bfouru"
-    ]
-  }
-  </script>
+ {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": "https://www.bfouru.com/#organization",
+  "name": "BFourU",
+  "url": "https://www.bfouru.com",
+  "logo": "https://www.bfouru.com/logo.jpg",
+  "image": "https://www.bfouru.com/logo.jpg",
+  "description": "BFourU is a creative and technology company offering Design & Branding, Software Development, Marketing & Gifting solutions across India and Dubai.",
+  "email": "info@bfouru.com",
+  "telephone": "+91 91829 70829",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad, Telangana",
+    "addressLocality": "Hyderabad",
+    "addressRegion": "Telangana",
+    "postalCode": "500001",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "India" },
+    { "@type": "Place", "name": "Dubai, UAE" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "sameAs": [
+    "https://www.linkedin.com/company/bfouru",
+    "https://www.instagram.com/bfouru",
+    "https://x.com/bfouru"
+  ]
+}
+
 
   <!-- ✅ 2. WebSite Schema (links to Organization) -->
   <script type="application/ld+json">
