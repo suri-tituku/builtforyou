@@ -37,94 +37,90 @@
     <link rel="icon" href="../logo.jpg" />
 
     <!-- ✅ JSON-LD Service Schema for BFourU -->
-    <script type="application/ld+json">
+   <!-- ✅ Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.bfouru.com/services/#servicepage",
+  "name": "BFourU Creative & Technology Services",
+  "mainEntityOfPage": "https://www.bfouru.com/services/",
+  "url": "https://www.bfouru.com/services/",
+  "description": "BFourU delivers creative design, branding, software development, marketing, and gifting solutions for brands across India and Dubai.",
+  "provider": { "@id": "https://www.bfouru.com/#organization" },
+  "areaServed": [
+    { "@type": "Place", "name": "India" },
+    { "@type": "Place", "name": "Dubai, UAE" }
+  ],
+  "hasPart": [
+    { "@type": "Service", "name": "Design & Branding" },
+    { "@type": "Service", "name": "Software Development" },
+    { "@type": "Service", "name": "Marketing & Growth" },
+    { "@type": "Service", "name": "Gifting & Craft" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "BFourU Service Divisions",
+    "itemListElement": [
       {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": "https://www.bfouru.com/services/#servicepage",
-        "name": "BFourU Creative & Technology Services",
-        "url": "https://www.bfouru.com/services/",
-        "description": "BFourU delivers creative design, branding, software development, marketing, and gifting solutions for brands across India and Dubai.",
-        "provider": {
-          "@type": "Organization",
-          "@id": "https://www.bfouru.com/#organization",
-          "name": "BFourU",
-          "url": "https://www.bfouru.com",
-          "logo": "https://www.bfouru.com/logo.jpg",
-          "email": "info@bfouru.com",
-          "telephone": "+91 91829 70829",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Hyderabad",
-            "addressRegion": "Telangana",
-            "addressCountry": "IN"
-          }
-        },
-        "areaServed": [
-          { "@type": "Place", "name": "India" },
-          { "@type": "Place", "name": "Dubai, UAE" }
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "BFourU Service Divisions",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Design & Branding",
-                "description": "Logo design, brand identity systems, UI/UX design, packaging, and creative direction for premium brands."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Software Development",
-                "description": "Full-stack web and mobile app development using modern frameworks such as React, Next.js, and Node."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Marketing & Growth",
-                "description": "SEO, content marketing, performance ads, analytics, and conversion optimization for business growth."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Gifting & Craft",
-                "description": "Custom branded gift kits, onboarding boxes, and artisan-crafted merchandise for corporate experiences."
-              }
-            }
-          ]
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Design & Branding",
+          "description": "Logo design, brand identity systems, UI/UX design, packaging, and creative direction for premium brands."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Software Development",
+          "description": "Full-stack web and mobile app development using modern frameworks such as React, Next.js, and Node."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Marketing & Growth",
+          "description": "SEO, content marketing, performance ads, analytics, and conversion optimization for business growth."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Gifting & Craft",
+          "description": "Custom branded gift kits, onboarding boxes, and artisan-crafted merchandise for corporate experiences."
         }
       }
-    </script>
+    ]
+  }
+}
+</script>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.bfouru.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Services",
-            "item": "https://www.bfouru.com/services/"
-          }
-        ]
-      }
-    </script>
+<!-- ✅ BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.bfouru.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://www.bfouru.com/services/"
+    }
+  ]
+}
+</script>
+
 
     <!-- Google Tag Manager -->
     <script>
