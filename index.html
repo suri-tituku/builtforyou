@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,46 +27,47 @@
   <meta name="twitter:image" content="https://www.bfouru.com/logo.jpg" />
   <link rel="icon" href="logo.jpg" />
 
-  <!-- ✅ 1. Organization Schema -->
- {
-  "@context": "https://schema.org",
-  "@type": ["Organization", "LocalBusiness"],
-  "@id": "https://www.bfouru.com/#organization",
-  "name": "BFourU",
-  "url": "https://www.bfouru.com",
-  "logo": "https://www.bfouru.com/logo.jpg",
-  "image": "https://www.bfouru.com/logo.jpg",
-  "description": "BFourU is a creative and technology company offering Design & Branding, Software Development, Marketing & Gifting solutions across India and Dubai.",
-  "email": "info@bfouru.com",
-  "telephone": "+91 91829 70829",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Hyderabad, Telangana",
-    "addressLocality": "Hyderabad",
-    "addressRegion": "Telangana",
-    "postalCode": "500001",
-    "addressCountry": "IN"
-  },
-  "areaServed": [
-    { "@type": "Place", "name": "India" },
-    { "@type": "Place", "name": "Dubai, UAE" }
-  ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "sameAs": [
-    "https://www.linkedin.com/company/bfouru",
-    "https://www.instagram.com/bfouru",
-    "https://x.com/bfouru"
-  ]
-}
+  <!-- ✅ 1. Combined Organization + LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "LocalBusiness"],
+    "@id": "https://www.bfouru.com/#organization",
+    "name": "BFourU",
+    "url": "https://www.bfouru.com",
+    "logo": "https://www.bfouru.com/logo.jpg",
+    "image": "https://www.bfouru.com/logo.jpg",
+    "description": "BFourU is a creative and technology company offering Design & Branding, Software Development, Marketing & Gifting solutions across India and Dubai.",
+    "email": "info@bfouru.com",
+    "telephone": "+91 91829 70829",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hyderabad, Telangana",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500001",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai, UAE" }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }],
+    "sameAs": [
+      "https://www.linkedin.com/company/bfouru",
+      "https://www.instagram.com/bfouru",
+      "https://x.com/bfouru"
+    ]
+  }
+  </script>
 
-
-  <!-- ✅ 2. WebSite Schema (links to Organization) -->
+  <!-- ✅ 2. WebSite Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -84,47 +84,28 @@
   }
   </script>
 
-  <!-- ✅ 3. LocalBusiness Schema -->
+  <!-- ✅ 3. Service Schema -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://www.bfouru.com/#localbusiness",
-  "name": "BFourU",
-  "image": "https://www.bfouru.com/logo.jpg",
-  "url": "https://www.bfouru.com",
-  "logo": "https://www.bfouru.com/logo.jpg",
-  "description": "BFourU unites Design & Branding, Software Development, Marketing, and Gifting solutions across India and Dubai.",
-  "email": "info@bfouru.com",
-  "telephone": "+91 91829 70829",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Hyderabad, Telangana",
-    "addressLocality": "Hyderabad",
-    "addressRegion": "Telangana",
-    "postalCode": "500001",
-    "addressCountry": "IN"
-  },
-  "areaServed": [
-    { "@type": "Place", "name": "India" },
-    { "@type": "Place", "name": "Dubai, UAE" }
-  ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "sameAs": [
-    "https://www.linkedin.com/company/bfouru",
-    "https://www.instagram.com/bfouru",
-    "https://x.com/bfouru"
-  ]
-}
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.bfouru.com/#services",
+    "serviceType": "Creative and Technology Services",
+    "provider": { "@id": "https://www.bfouru.com/#organization" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "BFourU Service Catalog",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design & Branding" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Software Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing & Growth" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gifting & Craft" } }
+      ]
+    }
+  }
   </script>
 
-  <!-- ✅ 4. BreadcrumbList (kept last) -->
+  <!-- ✅ 4. BreadcrumbList Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -141,14 +122,17 @@
   </script>
 
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=GTM-N3NW8M2T' + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-N3NW8M2T');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N3NW8M2T');
+  </script>
   <!-- End Google Tag Manager -->
 
   <style>
@@ -221,11 +205,13 @@
       padding: 8px 12px;
       border-radius: 10px;
       border: 1px solid transparent;
+      transition: all 0.2s ease;
     }
 
     .menu a:hover {
       border-color: var(--border);
       background: #0a0a0a;
+      color: #ffffff;
     }
 
     .hero {
@@ -324,8 +310,8 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Header -->
   <header>
@@ -347,8 +333,7 @@
     <p class="lead" style="margin-top:1.5rem;color:#bfbfbf;">
       At BFourU, we unite creativity and technology to help brands design, develop, and grow with purpose.
       Whether you’re building a new identity or expanding your digital presence, we make it simple to
-      <a href="./about/" style="color:#e53935;text-decoration:none;border-bottom:1px solid #e53935;">learn more about
-        us</a>
+      <a href="./about/" style="color:#e53935;text-decoration:none;border-bottom:1px solid #e53935;">learn more about us</a>
       and
       <a href="./contact/" style="color:#e53935;text-decoration:none;border-bottom:1px solid #e53935;">reach out</a>
       to start your next project today.
@@ -356,22 +341,10 @@
 
     <!-- Countdown -->
     <div class="countdown" role="timer" aria-live="polite" aria-label="Countdown to December 1, 2025">
-      <div class="tile">
-        <div class="num" id="dd">–</div>
-        <div class="lbl">Days</div>
-      </div>
-      <div class="tile">
-        <div class="num" id="hh">–</div>
-        <div class="lbl">Hours</div>
-      </div>
-      <div class="tile">
-        <div class="num" id="mm">–</div>
-        <div class="lbl">Minutes</div>
-      </div>
-      <div class="tile">
-        <div class="num" id="ss">–</div>
-        <div class="lbl">Seconds</div>
-      </div>
+      <div class="tile"><div class="num" id="dd">–</div><div class="lbl">Days</div></div>
+      <div class="tile"><div class="num" id="hh">–</div><div class="lbl">Hours</div></div>
+      <div class="tile"><div class="num" id="mm">–</div><div class="lbl">Minutes</div></div>
+      <div class="tile"><div class="num" id="ss">–</div><div class="lbl">Seconds</div></div>
     </div>
   </main>
 
@@ -433,5 +406,4 @@
     document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
