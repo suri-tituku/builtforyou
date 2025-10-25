@@ -7,6 +7,7 @@
   <meta name="description" content="BFourU unites four divisions — Design & Branding, Development, Marketing & Craft — to deliver consistent brand experiences. Based in Hyderabad, serving India & Dubai." />
   <link rel="canonical" href="https://www.bfouru.com/about/" />
   <meta name="robots" content="index, follow" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="BFourU" />
@@ -14,6 +15,7 @@
   <meta property="og:description" content="Design, Development, Marketing & Craft — built for you. India & Dubai." />
   <meta property="og:url" content="https://www.bfouru.com/about/" />
   <meta property="og:image" content="https://www.bfouru.com/logo.jpg" />
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About BFourU — One Brand, Four Forces" />
@@ -21,11 +23,29 @@
   <meta name="twitter:image" content="https://www.bfouru.com/logo.jpg" />
   <link rel="icon" href="../logo.jpg" />
 
-  <!-- ✅ JSON-LD Structured Data for BFourU -->
+  <!-- ✅ 1. AboutPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://www.bfouru.com/about/#aboutpage",
+    "name": "About BFourU",
+    "mainEntityOfPage": "https://www.bfouru.com/about/",
+    "description": "Learn about BFourU — a creative and technology company uniting Design, Branding, Development, Marketing, and Craft to help brands grow with purpose.",
+    "publisher": { "@id": "https://www.bfouru.com/#organization" },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://www.bfouru.com/logo.jpg"
+    }
+  }
+  </script>
+
+  <!-- ✅ 2. Organization Reference (linked to homepage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.bfouru.com/#organization",
     "name": "BFourU",
     "url": "https://www.bfouru.com",
     "logo": "https://www.bfouru.com/logo.jpg",
@@ -35,34 +55,37 @@
       "@type": "PostalAddress",
       "addressLocality": "Hyderabad",
       "addressRegion": "Telangana",
-      "addressCountry": "India"
+      "postalCode": "500001",
+      "addressCountry": "IN"
     },
-    "areaServed": ["India", "Dubai"]
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai, UAE" }
+    ]
   }
   </script>
 
-
+  <!-- ✅ 3. BreadcrumbList Schema -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.bfouru.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "About",
-      "item": "https://www.bfouru.com/about/"
-    }
-  ]
-}
-</script>
-
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.bfouru.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://www.bfouru.com/about/"
+      }
+    ]
+  }
+  </script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -71,6 +94,7 @@
   'https://www.googletagmanager.com/gtm.js?id=GTM-N3NW8M2T'+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-N3NW8M2T');</script>
   <!-- End GTM -->
+
   <style>
     :root{--bg:#000;--text:#f5f5f5;--muted:#bfbfbf;--accent:#e53935;--card:#0f0f10;--border:#1e1e1e;--shadow:0 10px 30px rgba(0,0,0,.35)}
     *{box-sizing:border-box}
@@ -97,10 +121,12 @@
     .footer-links a{margin:0 8px;color:#bfbfbf}
   </style>
 </head>
+
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3NW8M2T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+  <!-- Header -->
   <header>
     <div class="wrap nav">
       <a class="brand" href="../"><img src="../logo.jpg" alt="BFourU logo"></a>
@@ -113,17 +139,19 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <main class="wrap hero">
     <div class="kicker">Who We Are</div>
     <h1>About BFourU</h1>
     <p class="lead">BFourU unifies four disciplines — Design & Branding, Software Development, Marketing & Growth, and Gifting & Craft — so every touchpoint of your brand feels consistent, premium, and effective.</p>
-<p style="margin-top:1.2rem;color:#bfbfbf;text-align:center;">
-  Ready to work with us? 
-  <a href="../contact/" style="color:#e53935;text-decoration:none;border-bottom:1px solid #e53935;">Contact BFourU</a> 
-  and let’s create something exceptional together.
-</p>  
-</main>
+    <p style="margin-top:1.2rem;color:#bfbfbf;text-align:center;">
+      Ready to work with us? 
+      <a href="../contact/" style="color:#e53935;text-decoration:none;border-bottom:1px solid #e53935;">Contact BFourU</a> 
+      and let’s create something exceptional together.
+    </p>  
+  </main>
 
+  <!-- Info Cards -->
   <section>
     <div class="wrap grid">
       <article class="card">
@@ -141,11 +169,15 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="wrap">
       © <span id="yr"></span> BFourU. All Rights Reserved. · 📞 +91 91829 70829 · ✉️ <a href="mailto:info@bfouru.com">info@bfouru.com</a>
       <div class="footer-links" style="margin-top:6px">
-        <a href="../">Home</a> · <a href="../services/">Services</a> · <a href="../about/">About</a> · <a href="../contact/">Contact</a>
+        <a href="../">Home</a> · 
+        <a href="../services/">Services</a> · 
+        <a href="../about/">About</a> · 
+        <a href="../contact/">Contact</a>
       </div>
     </div>
   </footer>
